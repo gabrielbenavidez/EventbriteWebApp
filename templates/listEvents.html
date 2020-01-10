@@ -1,0 +1,21 @@
+<! DOCTYPE html >
+
+<html>
+    <head>
+        <title>FIU events</title>
+    </head>
+
+    <body align="center">
+    <h1><b>FIU Events</b></h1>
+    <a href="/">Home</a>
+    {% for mainkey in data.events %}
+        <h3> Event ID: {{ mainkey.id }}</h3>
+        <p>Event name:  {{ mainkey.name.text }}</p>
+        <p>Start Timezone:  {{ mainkey.start.timezone }}</p>
+        <p> Start Time/Date:{{ mainkey.start.utc }}</p>
+        <p>End Timezone:{{ mainkey.end.timezone }}</p>
+        <p>End Date: {{ mainkey.end.utc }}</p>
+        <p>Currency: {{ mainkey.currency }}</p>
+    {% endfor %}
+    </body>
+</html>
