@@ -5,7 +5,7 @@ import json
 
 base_url = 'https://www.eventbriteapi.com/v3/'
 api_key_prefix = '?token='
-api_key = 'HHUC2N3WA5SHL54DJDLC'
+api_key = 'your_key_here'
 organization_id = '299555869885/'
 events_tag = 'events/'
 users_tag = 'users/'
